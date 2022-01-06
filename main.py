@@ -4,7 +4,7 @@ import os
 import sys
 
 import discord
-from discord.ext import Intents
+from discord import Intents
 from discord.ext import commands
 intents = discord.Intents(messages=True, guilds=True)
 intents = Intents.default()
