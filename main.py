@@ -4,7 +4,7 @@ import os
 import sys
 
 import discord
-from discord.ext import intents
+from discord.ext import Intents
 from discord.ext import commands
 intents = discord.Intents(messages=True, guilds=True)
 bot = commands.Bot(command_prefix="", intents=intents)
