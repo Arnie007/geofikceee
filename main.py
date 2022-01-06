@@ -6,6 +6,12 @@ import sys
 import discord
 from discord import Intents
 from discord.ext import commands
+intents = discord.Intents.all()
+intents.guilds = True
+intents.members = True
+intents.presences = True
+intents.typing = True
+bot = commands.Bot(.., intents=intents)
 intents = discord.Intents(messages=True, guilds=True)
 intents = Intents.default()
 bot = commands.Bot(command_prefix="", intents=intents)
