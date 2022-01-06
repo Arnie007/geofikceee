@@ -7,6 +7,7 @@ import discord
 from discord.ext import Intents
 from discord.ext import commands
 intents = discord.Intents(messages=True, guilds=True)
+intents = Intents.default()
 bot = commands.Bot(command_prefix="", intents=intents)
 from discord.ext.commands import AutoShardedBot
 from discord.ext.commands.context import Context
