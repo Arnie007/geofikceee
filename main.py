@@ -9,6 +9,7 @@ from discord.ext import commands
 intents = discord.Intents.default()
 intents.members = True
 bot = commands.Bot(intents = discord.Intents.all())
+bot = commands.Bot(command_prefix=".", intents=intents)
 from discord.ext.commands import AutoShardedBot
 from discord.ext.commands.context import Context
 from discord.ext.commands.errors import (ExtensionAlreadyLoaded,
