@@ -4,12 +4,9 @@ import os
 import sys
 
 import discord
-from discord import intents
+from discord.ext import intents
 from discord.ext import commands
-
-intents = Intents.default()
-intents.members = True
-
+intents = discord.Intents(messages=True, guilds=True)
 bot = commands.Bot(command_prefix="", intents=intents)
 from discord.ext.commands import AutoShardedBot
 from discord.ext.commands.context import Context
