@@ -11,10 +11,10 @@ intents.guilds = True
 intents.members = True
 intents.presences = True
 intents.typing = True
-bot = commands.Bot(.., intents=intents)
 intents = discord.Intents(messages=True, guilds=True)
 intents = Intents.default()
 bot = commands.Bot(command_prefix="", intents=intents)
+bot = commands.Bot(.., intents=intents)
 from discord.ext.commands import AutoShardedBot
 from discord.ext.commands.context import Context
 from discord.ext.commands.errors import (ExtensionAlreadyLoaded,
